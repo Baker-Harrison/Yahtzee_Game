@@ -12,6 +12,7 @@ private:
 	void printMenu();
 	void menuSelectionHandler();
 	void gameLoop();
+	void isCategoryUsed(char category);
 
 
 public:

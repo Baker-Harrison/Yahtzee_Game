@@ -10,7 +10,7 @@ using namespace std;
 class GameLogic
 {
 private:
-	int score;
+	int score = 0;
 	vector<Die> roll;
 	static const int numOfDice = 5;
 	static const int numOfRounds = 3;
@@ -36,7 +36,6 @@ public:
 	vector<Die>& getRoll();
 	void appendRoll(Die die);
 	bool findInVector(int number);
-
 
 };
 
