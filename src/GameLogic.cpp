@@ -15,7 +15,7 @@ void GameLogic::removeDice(vector<Die> &roll)
 
 	do
 	{
-		cout << "Remove a dice or input -1 to exit";
+		cout << "Remove a dice (1-5) or input -1 to exit";
 		cin >> selection;
 
 		if (selection == -1)

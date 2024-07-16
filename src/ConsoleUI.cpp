@@ -36,7 +36,7 @@ void ConsoleUI::gameLoop()
 				logic.playTurn();
 
 				string selection;
-				cout << "Do you want to set aside some dice (yes/no)? ";
+				cout << "Do you want to set remove some dice from your roll (yes/no)? ";
 				cin >> selection;
 
 				if (selection == "yes") {
