@@ -28,12 +28,12 @@ public:
 	// Actions
 
 	void playTurn();
-	void removeDice(vector<Die> roll);
+	void removeDice(vector<Die> &roll);
 
 	int getNumOfRounds();
 	int getNumOfDice();
 
-	vector<Die> getRoll();
+	vector<Die>& getRoll();
 	void appendRoll(Die die);
 
 

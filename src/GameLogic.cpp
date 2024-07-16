@@ -9,7 +9,7 @@ GameLogic::GameLogic()
 {
 }
 
-void GameLogic::removeDice(vector<Die> roll)
+void GameLogic::removeDice(vector<Die> &roll)
 {
 	int selection;
 
@@ -39,22 +39,30 @@ int GameLogic::getScore()
 // Setters
 void GameLogic::setScore(int new_score)
 {
+	score = new_score;
 }
 
 // Actions
 
 void GameLogic::playTurn()
 {
-	for (int i = 0; i < (numOfDice - roll.size()); i++ ) {
+
+	int sizeRemaining = numOfDice - roll.size();
+
+	for (int i = 0; i < sizeRemaining; i++ ) {
 		Die die;
 		die.roll();
 		roll.push_back(die);
+
 	}
 
-		for (Die die : roll)
-		{
-			cout << die.getFaceValue() << endl;
-		}
+
+	for (Die die : roll)
+	{
+		cout << die.getFaceValue() << endl;
+	}
+
+
 }
 
 
@@ -68,7 +76,7 @@ int GameLogic::getNumOfDice()
 	return numOfDice;
 }
 
-vector<Die> GameLogic::getRoll()
+vector<Die>& GameLogic::getRoll()
 {
 	return roll;
 }

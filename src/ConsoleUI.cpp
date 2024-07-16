@@ -43,6 +43,11 @@ void ConsoleUI::gameLoop()
 			}
 		}
 	}
+
+	// Calculate score here
+
+
+
 }
 
 void ConsoleUI::printResults() {}
