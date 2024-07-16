@@ -81,7 +81,22 @@ vector<Die>& GameLogic::getRoll()
 	return roll;
 }
 
+bool GameLogic::findInVector(int number)
+{
+	for (Die die : roll)
+	{
+		if (die.getFaceValue() == number)
+		{
+			return true;
+		}
+
+	}
+	return false;
+}
+
+/*
 void GameLogic::appendRoll(Die die)
 {
 	roll.push_back(die);
 }
+*/

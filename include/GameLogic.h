@@ -35,7 +35,7 @@ public:
 
 	vector<Die>& getRoll();
 	void appendRoll(Die die);
-
+	bool findInVector(int number);
 
 
 };
