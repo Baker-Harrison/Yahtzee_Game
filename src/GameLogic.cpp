@@ -59,8 +59,9 @@ void GameLogic::playTurn()
 
 	for (Die die : roll)
 	{
-		cout << die.getFaceValue() << endl;
+		cout << die.getFaceValue() << " ";
 	}
+	cout << endl;
 
 
 }

@@ -45,10 +45,10 @@ void ConsoleUI::gameLoop()
 			}
 		}
 
+
+
 		cout << endl;
-		for (Die die : logic.getRoll()) {
-			cout << die.getFaceValue() << "   ";
-		}
+		logic.playTurn();
 		cout << endl;
 
 		// Select category and calculate score
